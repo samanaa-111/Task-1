@@ -8,7 +8,7 @@ header {
     background-color:brown ;
     display:flex;
     justify-content: space-between;
-    color: white;
+    color: rgb(91, 4, 4);
     padding: 10px;
     position: fixed;
     top: 0;
@@ -17,6 +17,7 @@ header {
 header.logo p{
     font-weight: 600;
     cursor: pointer;
+    color: rgb(225, 12, 12);
 }
 header nav{
 width: 70%;
@@ -34,4 +35,25 @@ header nav ul li{
 header nav ul li a{
     color: white;
     text-decoration: none;
+    padding: 0px 10px;
+    transition: all 3s ease;
+}
+header nav ul li a:hover{
+    text-decoration:line-through;
+    background-color: white;
+    color:blue;
+    border-radius: 5px;
+}
+@media screen and(max-width:480px){
+    header{
+        display: block;
+        background-color: brown;
+    }
+}
+header nav ul{
+      display: block;
+      width:100%;
+}
+header nav ul li a{
+    padding:10px 0px;
 }
